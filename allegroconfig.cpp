@@ -17,6 +17,7 @@
 #include "wall.hpp"
 #include "rocket.hpp"
 
+ALLEGRO_SAMPLE *sound[SOUNDS]= {NULL};
 ALLEGRO_DISPLAY *display;
 ALLEGRO_BITMAP *playerTank;
 ALLEGRO_BITMAP *enemyNormalTank;
@@ -26,20 +27,66 @@ ALLEGRO_BITMAP *enemyHeavyTank;
 ALLEGRO_BITMAP *ammoBitmap;
 ALLEGRO_BITMAP *wallBitmap;
 ALLEGRO_BITMAP *immortalWallBitmap;
+ALLEGRO_BITMAP *explosionBitmap;
+ALLEGRO_BITMAP *smallExplosionBitmap;
+ALLEGRO_BITMAP *baseBitmap;
+ALLEGRO_BITMAP *baseDamageBitmap;
+ALLEGRO_BITMAP *bonusBitmap;
 ALLEGRO_BITMAP *surviveButton;
 ALLEGRO_BITMAP *baseDefenceButton;
 ALLEGRO_BITMAP *campaignButton;
 ALLEGRO_BITMAP *highscoreButton;
 ALLEGRO_BITMAP *exitButton;
+ALLEGRO_BITMAP *background;
 ALLEGRO_BITMAP *backButton;
 ALLEGRO_BITMAP *okButton;
 ALLEGRO_KEYBOARD_STATE keyboard;
+ALLEGRO_FONT * font30;
+ALLEGRO_FONT * font60;
+ALLEGRO_FONT * hudFont;
+ALLEGRO_FONT * pauseFont;
+ALLEGRO_FONT * campaignFont;
 ALLEGRO_CONFIG* iniFile;
 
 extern Player * player;
 extern Enemy ** enemy;
+extern Bonus ** bonus;
+extern Explosion ** explosion;
 extern Wall ** wall;
 extern Rocket ** rocket;
+extern Player * playerCampaign;
+
+void SoundInitialize()
+{
+    if( !al_install_audio() )
+        ShowError("Sound", 1);
+
+    if( !al_init_acodec_addon() )
+        ShowError("Codecs", 2);
+
+    if( !al_reserve_samples(32) )
+        ShowError("Samples", 2);
+
+    sound[0]=al_load_sample(SHOT_SOUND);
+    if(!sound[0])
+        ShowError(SHOT_SOUND, 0);
+
+    sound[1]=al_load_sample(EXPLOSION_SOUND);
+    if(!sound[1])
+        ShowError(EXPLOSION_SOUND, 0);
+
+    sound[2]=al_load_sample(WALL_DESTROY_SOUND);
+    if(!sound[2])
+        ShowError(WALL_DESTROY_SOUND, 0);
+
+    sound[3]=al_load_sample(HIT_TANK_SOUND);
+    if(!sound[3])
+        ShowError(HIT_TANK_SOUND, 0);
+
+    sound[4]=al_load_sample(HIT_WALL_SOUND);
+    if(!sound[4])
+        ShowError(HIT_WALL_SOUND, 0);
+};
 
 void AllegroInitialize()
 {
@@ -112,6 +159,26 @@ void DataInitialize()
     if(!immortalWallBitmap)
         ShowError(DESTROYABLE_WALL, 0);
 
+    explosionBitmap = al_load_bitmap(BIG_EXPLOSION);
+    if(!explosionBitmap)
+        ShowError(BIG_EXPLOSION, 0);
+
+    smallExplosionBitmap = al_load_bitmap(SMALL_EXPLOSION);
+    if(!smallExplosionBitmap)
+        ShowError(SMALL_EXPLOSION, 0);
+
+    baseBitmap = al_load_bitmap(BASE_BITMAP);
+    if(!baseBitmap)
+        ShowError(BASE_BITMAP, 0);
+
+    baseDamageBitmap = al_load_bitmap(BASE_DESTROY);
+    if(!baseDamageBitmap)
+        ShowError(BASE_DESTROY, 0);
+
+    bonusBitmap = al_load_bitmap(BONUS_BITMAP);
+    if(!bonusBitmap)
+        ShowError(BONUS_BITMAP, 0);
+
     surviveButton = al_load_bitmap(SURVIVE_BUTTON);
     if(!surviveButton)
         ShowError(SURVIVE_BUTTON, 0);
@@ -132,6 +199,10 @@ void DataInitialize()
     if(!exitButton)
         ShowError(EXIT_BUTTON, 0);
 
+    background = al_load_bitmap(BACKGROUND_BITMAP);
+    if(!background)
+        ShowError(BACKGROUND_BITMAP, 0);
+
     backButton = al_load_bitmap(BACK_BUTTON);
     if(!backButton)
         ShowError(BACK_BUTTON, 0);
@@ -146,6 +217,33 @@ void DataInitialize()
     al_convert_mask_to_alpha(enemyFastTank, al_map_rgb(0, 0, 0));
     al_convert_mask_to_alpha(enemyHeavyTank, al_map_rgb(0, 0, 0));
     al_convert_mask_to_alpha(ammoBitmap, al_map_rgb(0, 0, 0));
+    al_convert_mask_to_alpha(bonusBitmap, al_map_rgb(0, 0, 0));
+    al_convert_mask_to_alpha(baseBitmap, al_map_rgb(0, 0, 0));
+    al_convert_mask_to_alpha(explosionBitmap, al_map_rgb(0, 0, 0));
+    al_convert_mask_to_alpha(smallExplosionBitmap, al_map_rgb(0, 0, 0));
+};
+
+void FontsInitialize()
+{
+    font30 = al_load_ttf_font(MAIN_FONT, 20, 4);
+    if(!font30)
+        ShowError(MAIN_FONT, 0);
+
+    font60 = al_load_ttf_font(MAIN_FONT, 60, 4);
+    if(!font60)
+        ShowError(MAIN_FONT, 0);
+
+    campaignFont = al_load_ttf_font(CAMPAIGN_FONT, 72, 4);
+    if(!campaignFont)
+        ShowError(CAMPAIGN_FONT, 0);
+
+    hudFont = al_load_ttf_font(HUD_FONT, 30, 4);
+    if(!hudFont)
+        ShowError(HUD_FONT, 0);
+
+    pauseFont = al_load_ttf_font(HUD_FONT, 72, 4);
+    if(!pauseFont)
+        ShowError(HUD_FONT, 0);
 };
 
 void ShowError(char *name, short option)
@@ -168,7 +266,11 @@ void ShowError(char *name, short option)
         sprintf(message, "%s have not been initialized", name);
         break;
     }
-
+    case 3:
+    {
+        sprintf(message, "Campaign file is corrupted");
+        break;
+    }
     }
 
     al_show_native_message_box(display, "Error", "Error occurred", message, NULL, ALLEGRO_MESSAGEBOX_ERROR);
@@ -177,6 +279,16 @@ void ShowError(char *name, short option)
 
 void ClearMemory()
 {
+    for (short i = 0; i < BONUSES; i++)
+    {
+        delete bonus[i];
+    }
+
+    for (short i = 0; i < EXPLOSIONS; i++)
+    {
+        delete explosion[i];
+    }
+
     for (short i = 0; i < OBSTACLES; i++)
     {
         delete wall[i];
@@ -195,7 +307,10 @@ void ClearMemory()
     delete[] rocket;
     delete[] enemy;
     delete[] player;
+    delete[] bonus;
+    delete[] explosion;
     delete[] wall;
+    delete[] playerCampaign;
 
     if(playerTank)
         al_destroy_bitmap(playerTank);
@@ -221,6 +336,12 @@ void ClearMemory()
     if(enemyHeavyTank)
         al_destroy_bitmap(enemyHeavyTank);
 
+    if(explosionBitmap)
+        al_destroy_bitmap(explosionBitmap);
+
+    if(smallExplosionBitmap)
+        al_destroy_bitmap(smallExplosionBitmap);
+
     if(surviveButton)
         al_destroy_bitmap(surviveButton);
 
@@ -239,9 +360,41 @@ void ClearMemory()
     if(okButton)
         al_destroy_bitmap(okButton);
 
+    if(background)
+        al_destroy_bitmap(background);
+
+    if(baseBitmap)
+        al_destroy_bitmap(baseBitmap);
+
+    if(baseDamageBitmap)
+        al_destroy_bitmap(baseDamageBitmap);
+
+    if(bonusBitmap)
+        al_destroy_bitmap(bonusBitmap);
+
+    if(font30)
+        al_destroy_font(font30);
+
+    if(font60)
+        al_destroy_font(font60);
+
+    if(hudFont)
+        al_destroy_font(hudFont);
+
+    if(pauseFont)
+        al_destroy_font(pauseFont);
+
+    if(campaignFont)
+        al_destroy_font(campaignFont);
+
+    for (short t = 0; t < SOUNDS; t++)
+    {
+        if(sound[t])
+            al_destroy_sample(sound[t]);
+    }
+
     if(display)
         al_destroy_display(display);
 
     exit(0);
-};
-
+}
