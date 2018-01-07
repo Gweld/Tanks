@@ -5,5 +5,10 @@
 
 void MenuDisplay();
 void Menu();
+void HighscoreMenu();
+void InputNick();
+void HighscoreLoad();
+void HighscoreSave(short mode, Player * player);
+void HighscoreDisplay(short mode);
 
 #endif 
