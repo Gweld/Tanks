@@ -1,7 +1,29 @@
 #include "bonus.hpp"
 #include "explosion.hpp"
+#include "wall.hpp"
+#include "player.hpp"
+#include "enemy.hpp"
+#include "rocket.hpp"
+#include "config.hpp"
+#include "allegroconfig.hpp"
+#include "menu.hpp"
+#include "main.hpp"
+#include "aStar.hpp"
+#include <stdio.h>
+#include <cstdlib>
+#include <string>
 
-
+extern ALLEGRO_SAMPLE *sound[SOUNDS];
+extern ALLEGRO_KEYBOARD_STATE keyboard;
+extern ALLEGRO_DISPLAY *display;
+extern ALLEGRO_BITMAP *playerTank;
+extern ALLEGRO_BITMAP *enemyNormalTank;
+extern ALLEGRO_BITMAP *enemyFastTank;
+extern ALLEGRO_BITMAP *enemyMidTank;
+extern ALLEGRO_BITMAP *enemyHeavyTank;
+extern ALLEGRO_BITMAP *ammoBitmap;
+extern ALLEGRO_BITMAP *wallBitmap;
+extern ALLEGRO_BITMAP *immortalWallBitmap;
 extern ALLEGRO_BITMAP *explosionBitmap;
 extern ALLEGRO_BITMAP *smallExplosionBitmap;
 extern ALLEGRO_BITMAP *baseBitmap;
@@ -13,20 +35,39 @@ extern ALLEGRO_FONT * font60;
 extern ALLEGRO_FONT * hudFont;
 extern ALLEGRO_FONT * pauseFont;
 extern ALLEGRO_FONT * campaignFont;
+extern ALLEGRO_CONFIG* iniFile;
 
-
-
+ALLEGRO_BITMAP *enemyTankBitmap = NULL;
+ALLEGRO_TIMER *FPSTimer = NULL;
 ALLEGRO_THREAD *FPSThread = NULL;
 
-
+Player * player = new Player;
+Enemy ** enemy = new Enemy*[ENEMIES];
 Bonus ** bonus = new Bonus*[BONUSES];
 Explosion ** explosion = new Explosion*[EXPLOSIONS];
-
+Wall ** wall = new Wall*[OBSTACLES];
+Rocket ** rocket = new Rocket*[ROCKETS];
 Player * playerCampaign = new Player;
 
-
+volatile short FPS=0;
+volatile short FPS1s=0;
+unsigned short gameMode = 0;
+bool gameover=false;
 bool pause = false;
 
+unsigned short Player::ammoTimer = 0;
+uint8_t Enemy::isPlayer[REAL_BATTLEFIELD_WIDTH+TANK_SIZE+1][REAL_BATTLEFIELD_HEIGHT+TANK_SIZE+1];
+bool Enemy::hasPlayer = false;
+bool Enemy::hasBase = false;
+short Enemy::baseCoord[2] = {0};
+short Rocket::rocketsCounter[2] = {0};
+short Wall::baseID = 0;
+bool Wall::baseExist = false;
+short Wall::respawnTimer = 0;
+short Enemy::playerTimer = 0;
+short Enemy::playerDirection = 5;
+bool Enemy::attackBase[3] = {0};
+short Enemy::lostPlayerTimer = 0;
 
 short levels = 0;
 short currentLevel = 0;
@@ -38,7 +79,7 @@ bool levelComplete = false;
 bool campaignFinish = false;
 bool youDied = false;
 bool baseDestroyed = false;
-
+short counterComunicat = 0;
 
 void RandomBonus()
 {
@@ -568,9 +609,14 @@ void Play()
 
 void ClearVariables()
 {
+    player -> clear();
+    ClearEnemy(enemy);
+    ClearWall(wall);
+    ClearRocket(rocket);
     ClearBonus(bonus);
     ClearExplosion(explosion);
-
+    ClearPlayerArray(wall);
+    counterComunicat = 0;
     levelComplete = false;
     campaignFinish = false;
     youDied = false;
@@ -589,23 +635,56 @@ void InitializeVariables()
     {
         explosion[i] = new Explosion;
     }
+
+    for (short i = 0; i < OBSTACLES; i++)
+    {
+        wall[i] = new Wall;
+    }
+
+    for (short i = 0; i < ROCKETS; i++)
+    {
+        rocket[i] = new Rocket;
+    }
+
+    for (short i = 0; i < ENEMIES; i++)
+    {
+        enemy[i] = new Enemy(i);
+    }
 }
 
 void InitializeGame()
 {
+    AllegroInitialize();
     FontsInitialize();
+    DataInitialize();
     HighscoreLoad();
     SoundInitialize();
+	if(FPS_COUNTER)
+	{
+		FPSThread = al_create_thread(FPScounter,NULL);
+		al_start_thread(FPSThread);
+	}   
 }
 
 void GameMenu()
 {
     while(1)
     {
+        Menu();
+
+        ClearVariables();
         levels = 0;
         currentLevel = 0;
+        gameover = false;
+        al_get_keyboard_state(&keyboard);
 
+        FPSTimer = al_create_timer(1.0 / FRAMERATE);
+        if(!FPSTimer)
+            ShowError("Timer", 1);
+
+        Play();
         HighscoreSave(gameMode, player);
+        al_rest(0.4);
     }
 }
 
