@@ -5,7 +5,6 @@
 #define VERSION "Tanks 1.0"
 
 #define FRAMERATE 60
-#define FPS_COUNTER 0
 
 #define SCREEN_HEIGHT 720
 #define SCREEN_WIDTH 1280
@@ -95,4 +94,4 @@
 #define RESPAWN_TIMER FRAMERATE*4
 
 #pragma GCC diagnostic ignored "-Wwrite-strings" //to ignore showError warning which is correct
-#endif 
+#endif

@@ -1,0 +1,443 @@
+[options]
+levels = 6
+enemies = 4
+enemiesAtOnce = 1
+walls = 56
+isBase = 0
+
+[player]
+x = 100
+y = 100
+life = 3
+shoots = 1
+direction = 3
+ammoSpeed = 3
+ammoTimerDelay = 90
+
+[enemyNR1] 
+x = 600
+y = 600
+life = 2
+direction = 1
+ammoSpeed = 5
+ammoDelay = 80
+difficulty = 0
+
+[enemyNR2]
+x = 450
+y = 250
+life = 3
+direction = 1
+ammoSpeed = 4
+ammoDelay = 60
+difficulty = 1
+
+[enemyNR3]
+x = 450
+y = 250
+life = 2
+direction = 0
+ammoSpeed = 5
+ammoDelay = 50
+difficulty = 2
+
+[enemyNR4]
+x = 860
+y = 50
+life = 4
+direction = 1
+ammoSpeed = 5
+ammoDelay = 60
+difficulty = 3
+
+[wallNR1]
+x = 50
+y = 500
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR2]
+x = 50
+y = 450
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR3]
+x = 50
+y = 400
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR4]
+x = 50
+y = 350
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR5]
+x = 50
+y = 300
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR6]
+x = 50
+y = 250
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR7]
+x = 100
+y = 200
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR8]
+x = 150
+y = 200
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR46]
+x = 200
+y = 200
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR9]
+x = 250
+y = 250
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR10]
+x = 250
+y = 300
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR11]
+x = 250
+y = 350
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR12]
+x = 250
+y = 400
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR13]
+x = 250
+y = 450
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR14]
+x = 250
+y = 500
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR15]
+x = 100
+y = 400
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR16]
+x = 150
+y = 400
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR47]
+x = 200
+y = 400
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR17] 
+x = 350
+y = 250
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR18]
+x = 350
+y = 300
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR19]
+x = 350
+y = 350
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR20]
+x = 350
+y = 400
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR21]
+x = 350
+y = 450
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR22]
+x = 400
+y = 500
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR23]
+x = 450
+y = 500
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR48]
+x = 500
+y = 500
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR24]
+x = 400
+y = 200
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR25]
+x = 500
+y = 200
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR26]
+x = 450
+y = 200
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR50]
+x = 550
+y = 250
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR27]
+x = 550
+y = 450
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR28]
+x = 550
+y = 400
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR29]
+x = 500
+y = 400
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR30]
+x = 650
+y = 500
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR31]
+x = 650
+y = 450
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR32]
+x = 650
+y = 400
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR33]
+x = 650
+y = 350
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR34]
+x = 650
+y = 300
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR35]
+x = 650
+y = 250
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR36]
+x = 650
+y = 200
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR37]
+x = 700
+y = 350
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR38]
+x = 750
+y = 350
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR49]
+x = 800
+y = 350
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR39]
+x = 850
+y = 500
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR40]
+x = 850
+y = 450
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR41]
+x = 850
+y = 400
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR42]
+x = 850
+y = 350
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR43]
+x = 850
+y = 300
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR44]
+x = 850
+y = 250
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR45]
+x = 850
+y = 200
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR51]
+x = 150
+y = 50
+life = 3
+destroyable = 0
+base = 0
+
+[wallNR52]
+x = 450
+y = 50
+life = 3
+destroyable = 0
+base = 0
+
+[wallNR53]
+x = 750
+y = 50
+life = 3
+destroyable = 0
+base = 0
+
+[wallNR54]
+x = 150
+y = 600
+life = 3
+destroyable = 0
+base = 0
+
+[wallNR55]
+x = 450
+y = 600
+life = 3
+destroyable = 0
+base = 0
+
+[wallNR56]
+x = 750
+y = 600
+life = 3
+destroyable = 0
+base = 0

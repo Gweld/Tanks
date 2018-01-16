@@ -1,0 +1,497 @@
+[options]
+enemies = 30
+enemiesAtOnce = 3
+walls = 31
+isBase = 0
+
+[player] 
+x = 450
+y = 650
+direction = 3
+
+[enemyNR1]
+x = 0
+y = 300
+life = 2
+direction = 1
+ammoSpeed = 5
+ammoDelay = 80
+difficulty = 0
+
+[enemyNR2]
+x = 350
+y = 150
+life = 3
+direction = 1
+ammoSpeed = 4
+ammoDelay = 60
+difficulty = 1
+
+[enemyNR3]
+x = 700
+y = 250
+life = 2
+direction = 0
+ammoSpeed = 5
+ammoDelay = 50
+difficulty = 2
+
+[enemyNR4]
+x = 0
+y = 300
+life = 4
+direction = 1
+ammoSpeed = 5
+ammoDelay = 60
+difficulty = 3
+
+[enemyNR5]
+x = 350
+y = 150
+life = 3
+direction = 1
+ammoSpeed = 4
+ammoDelay = 60
+difficulty = 1
+
+[enemyNR6]
+x = 700
+y = 250
+life = 2
+direction = 0
+ammoSpeed = 5
+ammoDelay = 50
+difficulty = 2
+
+[enemyNR7]
+x = 0
+y = 300
+life = 2
+direction = 1
+ammoSpeed = 5
+ammoDelay = 80
+difficulty = 0
+
+[enemyNR8]
+x = 350
+y = 150
+life = 3
+direction = 1
+ammoSpeed = 4
+ammoDelay = 60
+difficulty = 1
+
+[enemyNR9]
+x = 700
+y = 250
+life = 2
+direction = 0
+ammoSpeed = 5
+ammoDelay = 50
+difficulty = 2
+
+[enemyNR10]
+x = 0
+y = 300
+life = 4
+direction = 1
+ammoSpeed = 5
+ammoDelay = 60
+difficulty = 3
+
+[enemyNR11]
+x = 350
+y = 150
+life = 3
+direction = 1
+ammoSpeed = 4
+ammoDelay = 60
+difficulty = 1
+
+[enemyNR12]
+x = 700
+y = 250
+life = 2
+direction = 0
+ammoSpeed = 5
+ammoDelay = 50
+difficulty = 2
+
+[enemyNR13]
+x = 0
+y = 300
+life = 2
+direction = 1
+ammoSpeed = 5
+ammoDelay = 80
+difficulty = 0
+
+[enemyNR14]
+x = 350
+y = 150
+life = 3
+direction = 1
+ammoSpeed = 4
+ammoDelay = 60
+difficulty = 1
+
+[enemyNR15]
+x = 700
+y = 250
+life = 2
+direction = 0
+ammoSpeed = 5
+ammoDelay = 50
+difficulty = 2
+
+[enemyNR16]
+x = 350
+y = 150
+life = 3
+direction = 1
+ammoSpeed = 4
+ammoDelay = 60
+difficulty = 1
+
+[enemyNR17]
+x = 700
+y = 250
+life = 2
+direction = 0
+ammoSpeed = 5
+ammoDelay = 50
+difficulty = 2
+
+[enemyNR18]
+x = 0
+y = 300
+life = 2
+direction = 1
+ammoSpeed = 5
+ammoDelay = 80
+difficulty = 0
+
+[enemyNR19]
+x = 350
+y = 150
+life = 3
+direction = 1
+ammoSpeed = 4
+ammoDelay = 60
+difficulty = 1
+
+[enemyNR20]
+x = 700
+y = 250
+life = 2
+direction = 0
+ammoSpeed = 5
+ammoDelay = 50
+difficulty = 2
+
+[enemyNR21]
+x = 0
+y = 300
+life = 2
+direction = 1
+ammoSpeed = 5
+ammoDelay = 80
+difficulty = 0
+
+[enemyNR22]
+x = 350
+y = 150
+life = 3
+direction = 1
+ammoSpeed = 4
+ammoDelay = 60
+difficulty = 1
+
+[enemyNR23]
+x = 700
+y = 250
+life = 2
+direction = 0
+ammoSpeed = 5
+ammoDelay = 50
+difficulty = 2
+
+[enemyNR24]
+x = 0
+y = 300
+life = 4
+direction = 1
+ammoSpeed = 5
+ammoDelay = 60
+difficulty = 3
+
+[enemyNR25]
+x = 0
+y = 300
+life = 2
+direction = 1
+ammoSpeed = 5
+ammoDelay = 80
+difficulty = 0
+
+[enemyNR26]
+x = 350
+y = 150
+life = 3
+direction = 1
+ammoSpeed = 4
+ammoDelay = 60
+difficulty = 1
+
+[enemyNR27]
+x = 700
+y = 250
+life = 2
+direction = 0
+ammoSpeed = 5
+ammoDelay = 50
+difficulty = 2
+
+[enemyNR28]
+x = 0
+y = 300
+life = 4
+direction = 1
+ammoSpeed = 5
+ammoDelay = 60
+difficulty = 3
+
+[enemyNR29]
+x = 0
+y = 300
+life = 2
+direction = 1
+ammoSpeed = 5
+ammoDelay = 80
+difficulty = 0
+
+[enemyNR30]
+x = 350
+y = 150
+life = 3
+direction = 1
+ammoSpeed = 4
+ammoDelay = 60
+difficulty = 1
+
+[wallNR9]
+x = 100
+y = 450
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR10]
+x = 100
+y = 500
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR11]
+x = 100
+y = 550
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR12]
+x = 150
+y = 50
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR13]
+x = 150
+y = 100
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR14]
+x = 150
+y = 150
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR15]
+x = 150
+y = 200
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR16]
+x = 300
+y = 250
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR17]
+x = 300
+y = 300
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR18]
+x = 300
+y = 350
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR19]
+x = 350
+y = 250
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR20]
+x = 400
+y = 250
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR21]
+x = 500
+y = 0
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR22]
+x = 550
+y = 0
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR23]
+x = 600
+y = 0
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR1]
+x = 700
+y = 100
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR2]
+x = 700
+y = 400
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR3]
+x = 750
+y = 100
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR4]
+x = 750
+y = 400
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR5]
+x = 800
+y = 100
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR6]
+x = 800
+y = 400
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR7]
+x = 850
+y = 400
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR8]
+x = 900
+y = 400
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR24]
+x = 100
+y = 150
+life = 3
+destroyable = 1
+base = 0
+
+[wallNR25]
+x = 400
+y = 600
+life = 3
+destroyable = 0
+base = 0
+
+[wallNR26]
+x = 400
+y = 650
+life = 3
+destroyable = 0
+base = 0
+
+[wallNR27]
+x = 450
+y = 450
+life = 3
+destroyable = 0
+base = 0
+
+[wallNR28]
+x = 500
+y = 450
+life = 3
+destroyable = 0
+base = 0
+
+[wallNR29]
+x = 550
+y = 450
+life = 3
+destroyable = 0
+base = 0
+
+[wallNR30]
+x = 600
+y = 600
+life = 3
+destroyable = 0
+base = 0
+
+[wallNR31]
+x = 600
+y = 650
+life = 3
+destroyable = 0
+base = 0

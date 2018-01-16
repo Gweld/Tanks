@@ -7,6 +7,7 @@
 #include <cstdlib>
 #include <cstdio>
 
+
 extern ALLEGRO_CONFIG* iniFile;
 
 short Wall::getX()

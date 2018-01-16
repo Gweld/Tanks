@@ -5256,7 +5256,7 @@
 
 1459461520 c:\users\dawid\documents\projekty z cpp\czolgi allegro5\funkcje.hpp
 
-1301114762 c:\program files (x86)\codeblocks\mingw\include\windows.h
+1301111162 c:\program files (x86)\codeblocks\mingw\include\windows.h
 	<winresrc.h>
 	<stdarg.h>
 	<windef.h>
@@ -5286,7 +5286,7 @@
 	<winsock.h>
 	<ole2.h>
 
-1301114762 c:\program files (x86)\codeblocks\mingw\include\winresrc.h
+1301111162 c:\program files (x86)\codeblocks\mingw\include\winresrc.h
 	<winuser.h>
 	<winnt.h>
 	<winver.h>
@@ -5294,16 +5294,16 @@
 	<dlgs.h>
 	<commctrl.h>
 
-1301114764 c:\program files (x86)\codeblocks\mingw\include\winuser.h
+1301111164 c:\program files (x86)\codeblocks\mingw\include\winuser.h
 
-1301114762 c:\program files (x86)\codeblocks\mingw\include\winnt.h
+1301111162 c:\program files (x86)\codeblocks\mingw\include\winnt.h
 	<winerror.h>
 	<string.h>
 	<basetsd.h>
 	<pshpack4.h>
 	<poppack.h>
 
-1301114762 c:\program files (x86)\codeblocks\mingw\include\winerror.h
+1301111162 c:\program files (x86)\codeblocks\mingw\include\winerror.h
 
 1341006776 c:\program files (x86)\codeblocks\mingw\include\string.h
 	<_mingw.h>
@@ -5311,53 +5311,53 @@
 
 1341006770 c:\program files (x86)\codeblocks\mingw\include\_mingw.h
 
-1301114748 c:\program files (x86)\codeblocks\mingw\include\basetsd.h
+1301111148 c:\program files (x86)\codeblocks\mingw\include\basetsd.h
 
-1301114756 c:\program files (x86)\codeblocks\mingw\include\pshpack4.h
+1301111156 c:\program files (x86)\codeblocks\mingw\include\pshpack4.h
 
-1301114756 c:\program files (x86)\codeblocks\mingw\include\poppack.h
+1301111156 c:\program files (x86)\codeblocks\mingw\include\poppack.h
 
-1301114764 c:\program files (x86)\codeblocks\mingw\include\winver.h
+1301111164 c:\program files (x86)\codeblocks\mingw\include\winver.h
 
-1301114748 c:\program files (x86)\codeblocks\mingw\include\dde.h
+1301111148 c:\program files (x86)\codeblocks\mingw\include\dde.h
 
-1301114750 c:\program files (x86)\codeblocks\mingw\include\dlgs.h
+1301111150 c:\program files (x86)\codeblocks\mingw\include\dlgs.h
 
-1301114748 c:\program files (x86)\codeblocks\mingw\include\commctrl.h
+1301111148 c:\program files (x86)\codeblocks\mingw\include\commctrl.h
 	<prsht.h>
 
-1301114756 c:\program files (x86)\codeblocks\mingw\include\prsht.h
+1301111156 c:\program files (x86)\codeblocks\mingw\include\prsht.h
 
-1301114762 c:\program files (x86)\codeblocks\mingw\include\windef.h
+1301111162 c:\program files (x86)\codeblocks\mingw\include\windef.h
 	<winnt.h>
 
-1301114762 c:\program files (x86)\codeblocks\mingw\include\wincon.h
+1301111162 c:\program files (x86)\codeblocks\mingw\include\wincon.h
 
-1301114760 c:\program files (x86)\codeblocks\mingw\include\winbase.h
+1301111160 c:\program files (x86)\codeblocks\mingw\include\winbase.h
 
-1301114762 c:\program files (x86)\codeblocks\mingw\include\wingdi.h
+1301111162 c:\program files (x86)\codeblocks\mingw\include\wingdi.h
 
-1301114762 c:\program files (x86)\codeblocks\mingw\include\winnls.h
+1301111162 c:\program files (x86)\codeblocks\mingw\include\winnls.h
 
-1301114762 c:\program files (x86)\codeblocks\mingw\include\winnetwk.h
+1301111162 c:\program files (x86)\codeblocks\mingw\include\winnetwk.h
 
-1301114762 c:\program files (x86)\codeblocks\mingw\include\winreg.h
+1301111162 c:\program files (x86)\codeblocks\mingw\include\winreg.h
 
-1301114764 c:\program files (x86)\codeblocks\mingw\include\winsvc.h
+1301111164 c:\program files (x86)\codeblocks\mingw\include\winsvc.h
 
-1301114748 c:\program files (x86)\codeblocks\mingw\include\cderr.h
+1301111148 c:\program files (x86)\codeblocks\mingw\include\cderr.h
 
-1301114748 c:\program files (x86)\codeblocks\mingw\include\ddeml.h
+1301111148 c:\program files (x86)\codeblocks\mingw\include\ddeml.h
 
-1301114750 c:\program files (x86)\codeblocks\mingw\include\imm.h
+1301111150 c:\program files (x86)\codeblocks\mingw\include\imm.h
 
-1301114754 c:\program files (x86)\codeblocks\mingw\include\lzexpand.h
+1301111154 c:\program files (x86)\codeblocks\mingw\include\lzexpand.h
 
-1301114754 c:\program files (x86)\codeblocks\mingw\include\mmsystem.h
+1301111154 c:\program files (x86)\codeblocks\mingw\include\mmsystem.h
 
-1301114754 c:\program files (x86)\codeblocks\mingw\include\nb30.h
+1301111154 c:\program files (x86)\codeblocks\mingw\include\nb30.h
 
-1301114758 c:\program files (x86)\codeblocks\mingw\include\rpc.h
+1301111158 c:\program files (x86)\codeblocks\mingw\include\rpc.h
 	<windows.h>
 	<rpcdce.h>
 	<rpcnsi.h>
@@ -5365,71 +5365,71 @@
 	<winerror.h>
 	<excpt.h>
 
-1301114758 c:\program files (x86)\codeblocks\mingw\include\rpcdce.h
+1301111158 c:\program files (x86)\codeblocks\mingw\include\rpcdce.h
 	<basetyps.h>
 	<rpcdcep.h>
 
-1301114748 c:\program files (x86)\codeblocks\mingw\include\basetyps.h
+1301111148 c:\program files (x86)\codeblocks\mingw\include\basetyps.h
 
-1301114758 c:\program files (x86)\codeblocks\mingw\include\rpcdcep.h
+1301111158 c:\program files (x86)\codeblocks\mingw\include\rpcdcep.h
 
-1301114758 c:\program files (x86)\codeblocks\mingw\include\rpcnsi.h
+1301111158 c:\program files (x86)\codeblocks\mingw\include\rpcnsi.h
 
-1301114758 c:\program files (x86)\codeblocks\mingw\include\rpcnterr.h
+1301111158 c:\program files (x86)\codeblocks\mingw\include\rpcnterr.h
 
 1341006772 c:\program files (x86)\codeblocks\mingw\include\excpt.h
 	<_mingw.h>
 	<windef.h>
 
-1301114760 c:\program files (x86)\codeblocks\mingw\include\shellapi.h
+1301111160 c:\program files (x86)\codeblocks\mingw\include\shellapi.h
 	<pshpack2.h>
 	<poppack.h>
 
-1301114756 c:\program files (x86)\codeblocks\mingw\include\pshpack2.h
+1301111156 c:\program files (x86)\codeblocks\mingw\include\pshpack2.h
 
-1301114762 c:\program files (x86)\codeblocks\mingw\include\winperf.h
+1301111162 c:\program files (x86)\codeblocks\mingw\include\winperf.h
 
-1301114748 c:\program files (x86)\codeblocks\mingw\include\commdlg.h
+1301111148 c:\program files (x86)\codeblocks\mingw\include\commdlg.h
 	<unknwn.h>
 	<prsht.h>
 
-1301114760 c:\program files (x86)\codeblocks\mingw\include\unknwn.h
+1301111160 c:\program files (x86)\codeblocks\mingw\include\unknwn.h
 	<windows.h>
 	<objfwd.h>
 	<wtypes.h>
 
-1301114756 c:\program files (x86)\codeblocks\mingw\include\objfwd.h
+1301111156 c:\program files (x86)\codeblocks\mingw\include\objfwd.h
 	<basetyps.h>
 
-1301114764 c:\program files (x86)\codeblocks\mingw\include\wtypes.h
+1301111164 c:\program files (x86)\codeblocks\mingw\include\wtypes.h
 	<rpc.h>
 	<rpcndr.h>
 
-1301114758 c:\program files (x86)\codeblocks\mingw\include\rpcndr.h
+1301111158 c:\program files (x86)\codeblocks\mingw\include\rpcndr.h
 	<rpcnsip.h>
 	<objfwd.h>
 
-1301114758 c:\program files (x86)\codeblocks\mingw\include\rpcnsip.h
+1301111158 c:\program files (x86)\codeblocks\mingw\include\rpcnsip.h
 
-1301114762 c:\program files (x86)\codeblocks\mingw\include\winspool.h
+1301111162 c:\program files (x86)\codeblocks\mingw\include\winspool.h
 
-1301114762 c:\program files (x86)\codeblocks\mingw\include\winsock2.h
+1301111162 c:\program files (x86)\codeblocks\mingw\include\winsock2.h
 	<windows.h>
 
-1301114762 c:\program files (x86)\codeblocks\mingw\include\winsock.h
+1301111162 c:\program files (x86)\codeblocks\mingw\include\winsock.h
 	<windows.h>
 	<mswsock.h>
 
-1301114754 c:\program files (x86)\codeblocks\mingw\include\mswsock.h
+1301111154 c:\program files (x86)\codeblocks\mingw\include\mswsock.h
 
-1301114756 c:\program files (x86)\codeblocks\mingw\include\ole2.h
+1301111156 c:\program files (x86)\codeblocks\mingw\include\ole2.h
 	<winerror.h>
 	<objbase.h>
 	<olectlid.h>
 	<oleauto.h>
 	<oleidl.h>
 
-1301114754 c:\program files (x86)\codeblocks\mingw\include\objbase.h
+1301111154 c:\program files (x86)\codeblocks\mingw\include\objbase.h
 	<rpc.h>
 	<rpcndr.h>
 	<stdlib.h>
@@ -5443,24 +5443,24 @@
 	<_mingw.h>
 	<stddef.h>
 
-1301114756 c:\program files (x86)\codeblocks\mingw\include\objidl.h
+1301111156 c:\program files (x86)\codeblocks\mingw\include\objidl.h
 	<objfwd.h>
 
-1301114748 c:\program files (x86)\codeblocks\mingw\include\cguid.h
+1301111148 c:\program files (x86)\codeblocks\mingw\include\cguid.h
 
-1301114756 c:\program files (x86)\codeblocks\mingw\include\olectlid.h
+1301111156 c:\program files (x86)\codeblocks\mingw\include\olectlid.h
 
-1301114756 c:\program files (x86)\codeblocks\mingw\include\oleauto.h
+1301111156 c:\program files (x86)\codeblocks\mingw\include\oleauto.h
 	<oaidl.h>
 
-1301114754 c:\program files (x86)\codeblocks\mingw\include\oaidl.h
+1301111154 c:\program files (x86)\codeblocks\mingw\include\oaidl.h
 	<windows.h>
 	<ole2.h>
 
-1301114756 c:\program files (x86)\codeblocks\mingw\include\oleidl.h
+1301111156 c:\program files (x86)\codeblocks\mingw\include\oleidl.h
 	<objfwd.h>
 
-1441921812 c:\program files (x86)\codeblocks\mingw\include\allegro5\allegro.h
+1441918212 c:\program files (x86)\codeblocks\mingw\include\allegro5\allegro.h
 	"allegro5/base.h"
 	"allegro5/altime.h"
 	"allegro5/bitmap.h"
@@ -5501,7 +5501,7 @@
 	"allegro5/utf8.h"
 	"allegro5/alcompat.h"
 
-1459395017 c:\program files (x86)\codeblocks\mingw\include\allegro5\base.h
+1459391417 c:\program files (x86)\codeblocks\mingw\include\allegro5\base.h
 	<errno.h>
 	<limits.h>
 	<limits.h>
@@ -5529,7 +5529,7 @@
 	<_mingw.h>
 	<stddef.h>
 
-1405880629 c:\program files (x86)\codeblocks\mingw\include\allegro5\internal\alconfig.h
+1405877029 c:\program files (x86)\codeblocks\mingw\include\allegro5\internal\alconfig.h
 	"allegro5/platform/alplatf.h"
 	"allegro5/platform/alwatcom.h"
 	"allegro5/platform/almngw32.h"
@@ -5544,9 +5544,9 @@
 	"allegro5/platform/astdint.h"
 	"allegro5/platform/astdbool.h"
 
-1459400024 c:\program files (x86)\codeblocks\mingw\include\allegro5\platform\alplatf.h
+1459396424 c:\program files (x86)\codeblocks\mingw\include\allegro5\platform\alplatf.h
 
-1365818594 c:\program files (x86)\codeblocks\mingw\include\allegro5\platform\alwatcom.h
+1365814994 c:\program files (x86)\codeblocks\mingw\include\allegro5\platform\alwatcom.h
 	<io.h>
 	<i86.h>
 	<conio.h>
@@ -5574,27 +5574,27 @@
 	<_mingw.h>
 	<stdlib.h>
 
-1365819268 c:\program files (x86)\codeblocks\mingw\include\allegro5\platform\almngw32.h
+1365815668 c:\program files (x86)\codeblocks\mingw\include\allegro5\platform\almngw32.h
 	<io.h>
 	<fcntl.h>
 	<direct.h>
 	<malloc.h>
 	"allegro5/platform/alplatf.h"
 
-1365819268 c:\program files (x86)\codeblocks\mingw\include\allegro5\platform\albcc32.h
+1365815668 c:\program files (x86)\codeblocks\mingw\include\allegro5\platform\albcc32.h
 	<io.h>
 	<fcntl.h>
 	<direct.h>
 	<malloc.h>
 
-1365819268 c:\program files (x86)\codeblocks\mingw\include\allegro5\platform\almsvc.h
+1365815668 c:\program files (x86)\codeblocks\mingw\include\allegro5\platform\almsvc.h
 	<io.h>
 	<fcntl.h>
 	<direct.h>
 	<malloc.h>
 	"allegro5/platform/alplatf.h"
 
-1354194640 c:\program files (x86)\codeblocks\mingw\include\allegro5\platform\aliphonecfg.h
+1354191040 c:\program files (x86)\codeblocks\mingw\include\allegro5\platform\aliphonecfg.h
 	<fcntl.h>
 	<unistd.h>
 
@@ -5615,18 +5615,18 @@
 1341006772 c:\program files (x86)\codeblocks\mingw\include\getopt.h
 	<_mingw.h>
 
-1365819268 c:\program files (x86)\codeblocks\mingw\include\allegro5\platform\alosxcfg.h
+1365815668 c:\program files (x86)\codeblocks\mingw\include\allegro5\platform\alosxcfg.h
 	"allegro5/platform/alplatf.h"
 
-1365818594 c:\program files (x86)\codeblocks\mingw\include\allegro5\platform\alucfg.h
+1365814994 c:\program files (x86)\codeblocks\mingw\include\allegro5\platform\alucfg.h
 	<fcntl.h>
 	<unistd.h>
 	"alunix.h"
 	"allegro5/platform/alplatf.h"
 
-1266928920 c:\program files (x86)\codeblocks\mingw\include\allegro5\platform\alunix.h
+1266925320 c:\program files (x86)\codeblocks\mingw\include\allegro5\platform\alunix.h
 
-1281012045 c:\program files (x86)\codeblocks\mingw\include\allegro5\platform\astdint.h
+1281008445 c:\program files (x86)\codeblocks\mingw\include\allegro5\platform\astdint.h
 	<inttypes.h>
 	<stdint.h>
 
@@ -5635,146 +5635,146 @@
 	<stdint.h>
 	<stddef.h>
 
-1281012045 c:\program files (x86)\codeblocks\mingw\include\allegro5\platform\astdbool.h
+1281008445 c:\program files (x86)\codeblocks\mingw\include\allegro5\platform\astdbool.h
 	<stdbool.h>
 
-1285076981 c:\program files (x86)\codeblocks\mingw\include\allegro5\altime.h
+1285073381 c:\program files (x86)\codeblocks\mingw\include\allegro5\altime.h
 	"allegro5/base.h"
 
-1459113855 c:\program files (x86)\codeblocks\mingw\include\allegro5\bitmap.h
+1459110255 c:\program files (x86)\codeblocks\mingw\include\allegro5\bitmap.h
 	"allegro5/color.h"
 
-1440810792 c:\program files (x86)\codeblocks\mingw\include\allegro5\color.h
+1440807192 c:\program files (x86)\codeblocks\mingw\include\allegro5\color.h
 	"allegro5/base.h"
 
-1354624034 c:\program files (x86)\codeblocks\mingw\include\allegro5\bitmap_draw.h
+1354620434 c:\program files (x86)\codeblocks\mingw\include\allegro5\bitmap_draw.h
 	"allegro5/bitmap.h"
 
-1443029817 c:\program files (x86)\codeblocks\mingw\include\allegro5\bitmap_io.h
+1443026217 c:\program files (x86)\codeblocks\mingw\include\allegro5\bitmap_io.h
 	"allegro5/bitmap.h"
 	"allegro5/file.h"
 
-1419214822 c:\program files (x86)\codeblocks\mingw\include\allegro5\file.h
+1419211222 c:\program files (x86)\codeblocks\mingw\include\allegro5\file.h
 	"allegro5/base.h"
 	"allegro5/path.h"
 	"allegro5/utf8.h"
 
-1337492993 c:\program files (x86)\codeblocks\mingw\include\allegro5\path.h
+1337489393 c:\program files (x86)\codeblocks\mingw\include\allegro5\path.h
 	"allegro5/base.h"
 
-1337169289 c:\program files (x86)\codeblocks\mingw\include\allegro5\utf8.h
+1337165689 c:\program files (x86)\codeblocks\mingw\include\allegro5\utf8.h
 	"allegro5/base.h"
 
-1418627215 c:\program files (x86)\codeblocks\mingw\include\allegro5\bitmap_lock.h
+1418623615 c:\program files (x86)\codeblocks\mingw\include\allegro5\bitmap_lock.h
 	"allegro5/bitmap.h"
 
-1435293414 c:\program files (x86)\codeblocks\mingw\include\allegro5\blender.h
+1435289814 c:\program files (x86)\codeblocks\mingw\include\allegro5\blender.h
 
-1351459757 c:\program files (x86)\codeblocks\mingw\include\allegro5\config.h
+1351456157 c:\program files (x86)\codeblocks\mingw\include\allegro5\config.h
 	"allegro5/file.h"
 
-1351641789 c:\program files (x86)\codeblocks\mingw\include\allegro5\debug.h
+1351638189 c:\program files (x86)\codeblocks\mingw\include\allegro5\debug.h
 	<assert.h>
 	"allegro5/base.h"
 
 1341006770 c:\program files (x86)\codeblocks\mingw\include\assert.h
 	<_mingw.h>
 
-1450576911 c:\program files (x86)\codeblocks\mingw\include\allegro5\display.h
+1450573311 c:\program files (x86)\codeblocks\mingw\include\allegro5\display.h
 	"allegro5/bitmap.h"
 	"allegro5/color.h"
 	"allegro5/events.h"
 
-1455732592 c:\program files (x86)\codeblocks\mingw\include\allegro5\events.h
+1455728992 c:\program files (x86)\codeblocks\mingw\include\allegro5\events.h
 	"allegro5/altime.h"
 
-1354624034 c:\program files (x86)\codeblocks\mingw\include\allegro5\drawing.h
+1354620434 c:\program files (x86)\codeblocks\mingw\include\allegro5\drawing.h
 	"allegro5/color.h"
 
-1281012045 c:\program files (x86)\codeblocks\mingw\include\allegro5\error.h
+1281008445 c:\program files (x86)\codeblocks\mingw\include\allegro5\error.h
 	"allegro5/base.h"
 
-1281012045 c:\program files (x86)\codeblocks\mingw\include\allegro5\fixed.h
+1281008445 c:\program files (x86)\codeblocks\mingw\include\allegro5\fixed.h
 	"allegro5/base.h"
 
-1281012045 c:\program files (x86)\codeblocks\mingw\include\allegro5\fmaths.h
+1281008445 c:\program files (x86)\codeblocks\mingw\include\allegro5\fmaths.h
 	"allegro5/base.h"
 	"allegro5/fixed.h"
 	"allegro5/inline/fmaths.inl"
 
-1365816242 c:\program files (x86)\codeblocks\mingw\include\allegro5\inline\fmaths.inl
+1365812642 c:\program files (x86)\codeblocks\mingw\include\allegro5\inline\fmaths.inl
 	"allegro5/error.h"
 
-1406018237 c:\program files (x86)\codeblocks\mingw\include\allegro5\fshook.h
+1406014637 c:\program files (x86)\codeblocks\mingw\include\allegro5\fshook.h
 	"allegro5/base.h"
 	"allegro5/file.h"
 	"allegro5/path.h"
 	<sys/types.h>
 
-1354540159 c:\program files (x86)\codeblocks\mingw\include\allegro5\fullscreen_mode.h
+1354536559 c:\program files (x86)\codeblocks\mingw\include\allegro5\fullscreen_mode.h
 
-1354624034 c:\program files (x86)\codeblocks\mingw\include\allegro5\joystick.h
+1354620434 c:\program files (x86)\codeblocks\mingw\include\allegro5\joystick.h
 	"allegro5/base.h"
 	"allegro5/events.h"
 
-1354624034 c:\program files (x86)\codeblocks\mingw\include\allegro5\keyboard.h
+1354620434 c:\program files (x86)\codeblocks\mingw\include\allegro5\keyboard.h
 	"allegro5/base.h"
 	"allegro5/events.h"
 	"allegro5/keycodes.h"
 
-1374892601 c:\program files (x86)\codeblocks\mingw\include\allegro5\keycodes.h
+1374889001 c:\program files (x86)\codeblocks\mingw\include\allegro5\keycodes.h
 
-1286713532 c:\program files (x86)\codeblocks\mingw\include\allegro5\memory.h
+1286709932 c:\program files (x86)\codeblocks\mingw\include\allegro5\memory.h
 
-1354540935 c:\program files (x86)\codeblocks\mingw\include\allegro5\monitor.h
+1354537335 c:\program files (x86)\codeblocks\mingw\include\allegro5\monitor.h
 
-1423033931 c:\program files (x86)\codeblocks\mingw\include\allegro5\mouse.h
+1423030331 c:\program files (x86)\codeblocks\mingw\include\allegro5\mouse.h
 	"allegro5/base.h"
 	"allegro5/events.h"
 
-1354624034 c:\program files (x86)\codeblocks\mingw\include\allegro5\mouse_cursor.h
+1354620434 c:\program files (x86)\codeblocks\mingw\include\allegro5\mouse_cursor.h
 	"allegro5/base.h"
 
-1333148078 c:\program files (x86)\codeblocks\mingw\include\allegro5\system.h
+1333144478 c:\program files (x86)\codeblocks\mingw\include\allegro5\system.h
 	"allegro5/config.h"
 	"allegro5/path.h"
 
-1289090810 c:\program files (x86)\codeblocks\mingw\include\allegro5\threads.h
+1289087210 c:\program files (x86)\codeblocks\mingw\include\allegro5\threads.h
 	"allegro5/altime.h"
 
-1441682642 c:\program files (x86)\codeblocks\mingw\include\allegro5\timer.h
+1441679042 c:\program files (x86)\codeblocks\mingw\include\allegro5\timer.h
 	"allegro5/base.h"
 
-1440996195 c:\program files (x86)\codeblocks\mingw\include\allegro5\tls.h
+1440992595 c:\program files (x86)\codeblocks\mingw\include\allegro5\tls.h
 	"allegro5/base.h"
 
-1427944064 c:\program files (x86)\codeblocks\mingw\include\allegro5\transformations.h
+1427940464 c:\program files (x86)\codeblocks\mingw\include\allegro5\transformations.h
 	"allegro5/display.h"
 
-1459113855 c:\program files (x86)\codeblocks\mingw\include\allegro5\alcompat.h
+1459110255 c:\program files (x86)\codeblocks\mingw\include\allegro5\alcompat.h
 
-1455082307 c:\program files (x86)\codeblocks\mingw\include\allegro5\allegro_audio.h
+1455078707 c:\program files (x86)\codeblocks\mingw\include\allegro5\allegro_audio.h
 	"allegro5/allegro.h"
 
-1281012045 c:\program files (x86)\codeblocks\mingw\include\allegro5\allegro_acodec.h
+1281008445 c:\program files (x86)\codeblocks\mingw\include\allegro5\allegro_acodec.h
 	"allegro5/allegro.h"
 	"allegro5/allegro_audio.h"
 
-1428125411 c:\program files (x86)\codeblocks\mingw\include\allegro5\allegro_windows.h
+1428121811 c:\program files (x86)\codeblocks\mingw\include\allegro5\allegro_windows.h
 	<windows.h>
 
-1456089217 c:\program files (x86)\codeblocks\mingw\include\allegro5\allegro_native_dialog.h
+1456085617 c:\program files (x86)\codeblocks\mingw\include\allegro5\allegro_native_dialog.h
 	"allegro5/allegro.h"
 
-1393649266 c:\program files (x86)\codeblocks\mingw\include\allegro5\allegro_primitives.h
+1393645666 c:\program files (x86)\codeblocks\mingw\include\allegro5\allegro_primitives.h
 	<allegro5/allegro.h>
 
-1281012045 c:\program files (x86)\codeblocks\mingw\include\allegro5\allegro_image.h
+1281008445 c:\program files (x86)\codeblocks\mingw\include\allegro5\allegro_image.h
 
-1442285678 c:\program files (x86)\codeblocks\mingw\include\allegro5\allegro_font.h
+1442282078 c:\program files (x86)\codeblocks\mingw\include\allegro5\allegro_font.h
 	"allegro5/allegro.h"
 
-1329951986 c:\program files (x86)\codeblocks\mingw\include\allegro5\allegro_ttf.h
+1329948386 c:\program files (x86)\codeblocks\mingw\include\allegro5\allegro_ttf.h
 	"allegro5/allegro.h"
 	"allegro5/allegro_font.h"
 
@@ -7658,7 +7658,7 @@
 	<float.h>
 	"quadmath.h"
 
-1341010374 c:\program files (x86)\codeblocks\mingw\include\math.h
+1341006774 c:\program files (x86)\codeblocks\mingw\include\math.h
 	<_mingw.h>
 
 1449860452 c:\program files (x86)\codeblocks\mingw\include\boost\math\tools\real_cast.hpp
@@ -10736,26 +10736,26 @@
 	<cstdlib>
 	<cstdio>
 
-1324193452 c:\program files (x86)\codeblocks\mingw\include\allegro5\platform\alandroidcfg.h
+1324189852 c:\program files (x86)\codeblocks\mingw\include\allegro5\platform\alandroidcfg.h
 
-1354194640 c:\program files (x86)\codeblocks\mingw\include\allegro5\platform\alraspberrypicfg.h
+1354191040 c:\program files (x86)\codeblocks\mingw\include\allegro5\platform\alraspberrypicfg.h
 	<fcntl.h>
 	<unistd.h>
 	<sys/types.h>
 
-1405880629 c:\program files (x86)\codeblocks\mingw\include\allegro5\platform\allegro_sdl_config.h
+1405877029 c:\program files (x86)\codeblocks\mingw\include\allegro5\platform\allegro_sdl_config.h
 	<fcntl.h>
 	<unistd.h>
 
-1441574420 c:\program files (x86)\codeblocks\mingw\include\allegro5\clipboard.h
+1441570820 c:\program files (x86)\codeblocks\mingw\include\allegro5\clipboard.h
 	"allegro5/base.h"
 	"allegro5/display.h"
 	"allegro5/utf8.h"
 
-1441921812 c:\program files (x86)\codeblocks\mingw\include\allegro5\cpu.h
+1441918212 c:\program files (x86)\codeblocks\mingw\include\allegro5\cpu.h
 	"allegro5/base.h"
 
-1457210840 c:\program files (x86)\codeblocks\mingw\include\allegro5\haptic.h
+1457207240 c:\program files (x86)\codeblocks\mingw\include\allegro5\haptic.h
 	"allegro5/base.h"
 	"allegro5/display.h"
 	"allegro5/events.h"
@@ -10764,13 +10764,13 @@
 	"allegro5/mouse.h"
 	"allegro5/touch_input.h"
 
-1456090587 c:\program files (x86)\codeblocks\mingw\include\allegro5\touch_input.h
+1456086987 c:\program files (x86)\codeblocks\mingw\include\allegro5\touch_input.h
 	"allegro5/base.h"
 	"allegro5/events.h"
 
-1337484627 c:\program files (x86)\codeblocks\mingw\include\allegro5\render_state.h
+1337481027 c:\program files (x86)\codeblocks\mingw\include\allegro5\render_state.h
 
-1363131182 c:\program files (x86)\codeblocks\mingw\include\allegro5\shader.h
+1363127582 c:\program files (x86)\codeblocks\mingw\include\allegro5\shader.h
 	"allegro5/base.h"
 	"allegro5/transformations.h"
 
@@ -11154,4 +11154,173 @@
 	"enemy.hpp"
 	<cstdlib>
 	<cstdio>
+
+1479479546 source:c:\users\dawid\desktop\gitja\tanks\allegroconfig.cpp
+	"allegroconfig.hpp"
+	<allegro5/allegro.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	<allegro5/allegro_windows.h>
+	<allegro5/allegro_native_dialog.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<stdio.h>
+	"config.hpp"
+	"player.hpp"
+	"enemy.hpp"
+	"bonus.hpp"
+	"explosion.hpp"
+	"wall.hpp"
+	"rocket.hpp"
+
+1479212083 c:\users\dawid\desktop\gitja\tanks\allegroconfig.hpp
+
+1516122424 c:\users\dawid\desktop\gitja\tanks\config.hpp
+
+1516121804 c:\users\dawid\desktop\gitja\tanks\player.hpp
+	"wall.hpp"
+	"bonus.hpp"
+
+1513019768 c:\users\dawid\desktop\gitja\tanks\wall.hpp
+	<stdint.h>
+
+1479818222 c:\users\dawid\desktop\gitja\tanks\bonus.hpp
+	"explosion.hpp"
+
+1479818207 c:\users\dawid\desktop\gitja\tanks\explosion.hpp
+	"wall.hpp"
+
+1515330973 c:\users\dawid\desktop\gitja\tanks\enemy.hpp
+	"player.hpp"
+	"rocket.hpp"
+	"config.hpp"
+	<cstring>
+	<stdint.h>
+
+1515331638 c:\users\dawid\desktop\gitja\tanks\rocket.hpp
+	"wall.hpp"
+	"player.hpp"
+	"config.hpp"
+
+1513015862 source:c:\users\dawid\desktop\gitja\tanks\astar.cpp
+	<iostream>
+	<iomanip>
+	<queue>
+	<string>
+	<math.h>
+	<ctime>
+	<cstdlib>
+	<cstdio>
+	"allegroconfig.hpp"
+	"enemy.hpp"
+	"wall.hpp"
+	"config.hpp"
+
+1515331638 source:c:\users\dawid\desktop\gitja\tanks\menu.cpp
+	"allegroconfig.hpp"
+	<allegro5/allegro.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	<allegro5/allegro_windows.h>
+	<allegro5/allegro_native_dialog.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<stdio.h>
+	<string>
+	"config.hpp"
+	"menu.hpp"
+	"main.hpp"
+	"allegroconfig.hpp"
+
+1515331638 c:\users\dawid\desktop\gitja\tanks\menu.hpp
+	"player.hpp"
+
+1516122477 c:\users\dawid\desktop\gitja\tanks\main.hpp
+	<allegro5/allegro.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	<allegro5/allegro_windows.h>
+	<allegro5/allegro_native_dialog.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+
+1515331638 source:c:\users\dawid\desktop\gitja\tanks\rocket.cpp
+	"rocket.hpp"
+	"config.hpp"
+	<allegro5/allegro.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	"enemy.hpp"
+	"explosion.hpp"
+	"bonus.hpp"
+	"player.hpp"
+	"wall.hpp"
+	"main.hpp"
+
+1479472715 source:c:\users\dawid\desktop\gitja\tanks\bonus.cpp
+	"bonus.hpp"
+	"config.hpp"
+	<allegro5/allegro.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	"enemy.hpp"
+	"main.hpp"
+	"explosion.hpp"
+
+1479467216 source:c:\users\dawid\desktop\gitja\tanks\explosion.cpp
+	"explosion.hpp"
+	"config.hpp"
+
+1516122401 source:c:\users\dawid\desktop\gitja\tanks\enemy.cpp
+	"enemy.hpp"
+	"config.hpp"
+	"allegroconfig.hpp"
+	"main.hpp"
+	"aStar.hpp"
+	<cstdlib>
+	<cstdio>
+	<string>
+
+1513015869 c:\users\dawid\desktop\gitja\tanks\astar.hpp
+	<string>
+
+1516122438 source:c:\users\dawid\desktop\gitja\tanks\wall.cpp
+	"wall.hpp"
+	"main.hpp"
+	"config.hpp"
+	"allegroconfig.hpp"
+	"player.hpp"
+	"enemy.hpp"
+	<cstdlib>
+	<cstdio>
+
+1516122435 source:c:\users\dawid\desktop\gitja\tanks\player.cpp
+	"player.hpp"
+	"main.hpp"
+	"config.hpp"
+	"enemy.hpp"
+	"allegroconfig.hpp"
+	<stdio.h>
+
+1516122559 source:c:\users\dawid\desktop\gitja\tanks\main.cpp
+	"bonus.hpp"
+	"explosion.hpp"
+	"wall.hpp"
+	"player.hpp"
+	"enemy.hpp"
+	"rocket.hpp"
+	"config.hpp"
+	"allegroconfig.hpp"
+	"menu.hpp"
+	"main.hpp"
+	"aStar.hpp"
+	<stdio.h>
+	<cstdlib>
+	<string>
 

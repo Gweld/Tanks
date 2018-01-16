@@ -5,6 +5,7 @@
 #include "allegroconfig.hpp"
 #include <stdio.h>
 
+
 extern ALLEGRO_CONFIG* iniFile;
 extern Player * playerCampaign;
 

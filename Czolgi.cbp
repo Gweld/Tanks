@@ -21,6 +21,10 @@
 				<Linker>
 					<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/liballegro_monolith-debug.dll.a" />
 				</Linker>
+				<ExtraCommands>
+					<Add after='cmd /c xcopy &quot;$(PROJECT_DIR)\pliki gry&quot; &quot;$(PROJECT_DIR)\bin\Debug\&quot; /y' />
+					<Mode after="always" />
+				</ExtraCommands>
 			</Target>
 			<Target title="Release">
 				<Option platforms="Windows;" />
@@ -35,6 +39,10 @@
 				<Linker>
 					<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/liballegro_monolith.dll.a" />
 				</Linker>
+				<ExtraCommands>
+					<Add after='cmd /c xcopy &quot;$(PROJECT_DIR)\pliki gry&quot; &quot;$(PROJECT_DIR)\bin\Release\&quot; /y' />
+					<Mode after="always" />
+				</ExtraCommands>
 			</Target>
 		</Build>
 		<Compiler>
@@ -44,10 +52,12 @@
 		<Unit filename="aStar.hpp" />
 		<Unit filename="allegroconfig.cpp" />
 		<Unit filename="allegroconfig.hpp" />
+		<Unit filename="bonus.cpp" />
 		<Unit filename="bonus.hpp" />
 		<Unit filename="config.hpp" />
 		<Unit filename="enemy.cpp" />
 		<Unit filename="enemy.hpp" />
+		<Unit filename="explosion.cpp" />
 		<Unit filename="explosion.hpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="main.hpp" />

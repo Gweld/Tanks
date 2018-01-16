@@ -142,18 +142,6 @@ void RandomBonus()
     }
 };
 
-static void *FPScounter(ALLEGRO_THREAD *thread, void * Args)
-{
-    while(1)
-    {
-        al_rest(1.0);
-        FPS1s=FPS;
-        FPS=0;
-    }
-
-    return NULL;
-};
-
 void CampaignMapCreate()
 {
     if(levels == 0)
@@ -318,10 +306,7 @@ void Play()
                 al_draw_textf( hudFont, HUD_COLOR, 1120, 10, ALLEGRO_ALIGN_CENTER, "Level: %i/%i",currentLevel, levels);
                 al_draw_textf( hudFont, HUD_COLOR, 1120, 410, ALLEGRO_ALIGN_CENTER, "Progress: %i/%i",enemiesKilled, enemies);
             }
-			
-			if(FPS_COUNTER)
-				al_draw_textf( font30, HUD_COLOR, 1100, 480, ALLEGRO_ALIGN_CENTER, "FPS %i ",FPS1s);
-			
+
             if(DEBUG)
             {
                 al_draw_textf( font30, HUD_COLOR, 1110, 510, ALLEGRO_ALIGN_CENTER, "Target %i x %i, Dest %i x %i",enemy[0] -> getDestinationX(),   enemy[0] -> getDestinationY(), enemy[0] -> getTempDestinationX(), enemy[0] -> getTempDestinationY());
@@ -659,11 +644,6 @@ void InitializeGame()
     DataInitialize();
     HighscoreLoad();
     SoundInitialize();
-	if(FPS_COUNTER)
-	{
-		FPSThread = al_create_thread(FPScounter,NULL);
-		al_start_thread(FPSThread);
-	}   
 }
 
 void GameMenu()
